@@ -30,9 +30,18 @@ def ronio():
 def ck():
     return render_template('ck.html')
 
-@app.route('/searchalgo')
-def kat():
-    return render_template("searchalgo.html")
+@app.route('/baneka')
+def baneka():
+    return render_template("baneka.html")
+
+@app.route('/jiro')
+def jiro():
+    return render_template("jiro.html")
+
+@app.route('/contact')
+def contact():
+    return render_template("bnkcontact.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)
